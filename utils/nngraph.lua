@@ -13,7 +13,7 @@ function ident(x)
 end
 
 function empty()
-  return torch.zeros(1)
+  return {torch.zeros(1)}, {torch.zeros(1)}
 end
 
 function empty_bp(self, input, gradOutput, name)
